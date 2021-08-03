@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather app</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: url(images/bg-weatherapp.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+
+        }
+
+        #weather-detail {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+
+
+
+        }
+
+        #weather-detail img {
+            height: 50px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+
+                <input id='search-field' type="text" class="form-control"
+                    placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick='searchCity()' type="button" class="btn btn-danger">Search</button>
+
+                </div>
+            </div>
+        </form>
+
+
+        <div id='weather-detail' class='text-dark'>
+
+            <img id='icon' src="https://openweathermap.org/img/wn/02d@2x.png">
+
+            <h2 id='city'> </h2>
+            <h2 id='country'> </h2>
+            <h2 id='temperature-celsius'></h2>
+            <h2 id='temperature-fahrenheit'></h2>
+            <h3 id="condition"></h3>
+            <p id='last-update'></p>
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
