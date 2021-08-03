@@ -5,6 +5,11 @@
 // API Key:  a965f3a885504e2cba4121820210308
 // API Url=` https://api.weatherapi.com/v1/current.json?key={API key}=${city name}&aqi=yes`
 
+// live site : https://montasirazad.github.io/weather-app-3-aug-2021/
+
+
+
+
 const searchCity = () => {
    const inputCity = document.getElementById('search-field').value
    const url = `https://api.weatherapi.com/v1/current.json?key= a965f3a885504e2cba4121820210308&q=${inputCity}&aqi=yes`
