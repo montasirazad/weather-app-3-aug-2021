@@ -41,7 +41,7 @@ const updateUI = (location, current) => {
    document.getElementById("uv").innerText = `Uv: ` + current.uv;
    document.getElementById("wind_kph").innerText = `km/h : ` + current.wind_kph;
    document.getElementById("wind_dir").innerText = `Wind direction: ` + current.wind_dir;
-   document.getElementById("cloud").innerText = 'Cloud' + current.cloud + '%';
+   document.getElementById("cloud").innerText = 'Cloud: ' + current.cloud + '%';
    console.log(location.name)
 
 }
