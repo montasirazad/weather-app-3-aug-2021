@@ -19,9 +19,16 @@
         }
 
         #weather-detail {
-            display: block;
+            display: none;
             margin: 0 auto;
             text-align: center;
+            width: 350px;
+            padding: 20px;
+            height:auto;
+            border: 4px ;
+            border-radius: 6px;
+            background-color: rgb(0, 0, 0,.3);
+            color:white;
 
 
 
@@ -49,15 +56,21 @@
         </form>
 
 
-        <div id='weather-detail' class='text-dark'>
+        <div id='weather-detail' >
 
-            <img id='icon' src="https://openweathermap.org/img/wn/02d@2x.png">
-
+            <img id='icon' src="">
+            <h3 id="condition"></h3>
             <h2 id='city'> </h2>
             <h2 id='country'> </h2>
             <h2 id='temperature-celsius'></h2>
             <h2 id='temperature-fahrenheit'></h2>
-            <h3 id="condition"></h3>
+            <h3 id='feelslike_c'></h3>
+            <h3 id='feelslike_f'></h3>
+            <h3 id='humidity'></h3>
+            <h4 id='uv'></h4>
+            <h5 id="wind_kph"></h5>
+            <h5 id="wind_dir"></h5>
+            <h5 id="cloud"></h5> 
             <p id='last-update'></p>
 
 
